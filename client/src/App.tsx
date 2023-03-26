@@ -1,10 +1,10 @@
 import React from 'react';
-import './sass/index.scss';
+import Navbar from './components/layouts/Navbar';
 
 function App() {
   return (
-    <div className="body">
-      <h1>Hello World</h1>
+    <div>
+      <Navbar />
     </div>
   );
 }

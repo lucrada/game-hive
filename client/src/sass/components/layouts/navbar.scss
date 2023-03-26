@@ -1,0 +1,51 @@
+@import '../../theme.scss';
+@import '../../util.scss';
+
+@mixin nav-item {
+    position: relative;
+    text-decoration: none;
+    color: $primary-color;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border-bottom: 2px solid transparent;
+        transform-origin: 50%;
+        transform: scaleX(0);
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+            transform: scaleX(1);
+            border-bottom: 2px solid $primary-color;
+        }
+    }
+}
+
+.nav-bar {
+    @include row-flex-space-around;
+    padding: 1rem;
+
+    &__left,
+    &__right {
+        @include row-flex-space-around;
+        flex: 1;
+
+        a {
+            @include nav-item;
+        }
+    }
+
+    &__center {
+        @include row-flex-space-around;
+        flex: 1;
+    }
+}

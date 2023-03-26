@@ -1,0 +1,15 @@
+/* Color Scheme */
+$primary-color: red;
+$secondary-color: blue;
+$tertiary-color: green;
+
+/* Typography */
+
+$font-main: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+/* Prestyles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-main;
+}
