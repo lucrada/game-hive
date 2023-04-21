@@ -4,3 +4,10 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@mixin absolute-center {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+}

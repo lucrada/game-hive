@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import '../../sass/components/layouts/navbar.scss';
+import '../../sass/layouts/navbar.scss';
+import SearchIcon from '@mui/icons-material/Search';
 
 function Navbar() {
     return (
@@ -11,12 +12,12 @@ function Navbar() {
                 <a href='#'>Interviews</a>
             </div>
             <div className='nav-bar__center'>
-                <h3>Logo Image</h3>
+                <img className='nav-bar__center--logo' src='assets/images/logo.png' alt='logo' />
             </div>
             <div className='nav-bar__right'>
                 <div>
-                    <input type='textbox' />
-                    <input type='button' value='Search' />
+                    <input type='text' placeholder='Search' autoComplete='off' />
+                    <SearchIcon className='search-btn' />
                 </div>
                 <a href="#">Log In</a>
                 <a href="#">Sign Up</a>

@@ -1,13 +1,22 @@
 /* Color Scheme */
-$primary-color: red;
-$secondary-color: blue;
-$tertiary-color: green;
+
+$primary-dark: #1f1d2c;
+$secondary-dark: #262837;
+$tertiary-dark: #808292;
+
+$color-white: #fefdff;
+$color-black: #000;
+
+$color-green: #24b07f;
+$color-purple: #6c5dc8;
+$color-red: #d96a6b;
 
 /* Typography */
 
 $font-main: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 /* Prestyles */
+
 * {
     margin: 0;
     padding: 0;
