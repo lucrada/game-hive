@@ -8,8 +8,8 @@ function Navbar() {
             <div className='nav-bar__left'>
                 <a href='#'>Home</a>
                 <a href='#'>Articles</a>
+                <a href='#'>News</a>
                 <a href='#'>Trailers</a>
-                <a href='#'>Interviews</a>
             </div>
             <div className='nav-bar__center'>
                 <img className='nav-bar__center--logo' src='assets/images/logo.png' alt='logo' />
