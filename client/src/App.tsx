@@ -1,11 +1,10 @@
-import React from 'react';
-import Navbar from './components/layouts/Navbar';
+import LandingPage from './pages/parent/LandingPage';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <>
+      <LandingPage />
+    </>
   );
 }
 
