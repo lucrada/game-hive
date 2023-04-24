@@ -17,3 +17,22 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin flex-row-center-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-row-center-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flex-column-center-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

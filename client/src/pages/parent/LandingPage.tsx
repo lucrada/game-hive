@@ -7,7 +7,7 @@ import Trailers from '../child/Trailers';
 
 export default function LandingPage() {
     return (
-        <>
+        <div>
             <Navbar />
             <Routes>
                 <Route path='/' element={<Home />} />
@@ -15,6 +15,6 @@ export default function LandingPage() {
                 <Route path='/news' element={<News />} />
                 <Route path='/trailers' element={<Trailers />} />
             </Routes>
-        </>
+        </div>
     );
 }

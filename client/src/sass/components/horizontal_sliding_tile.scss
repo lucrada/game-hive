@@ -1,0 +1,75 @@
+@import '../theme.scss';
+@import '../util.scss';
+@import '../animation.scss';
+
+.sliding-tile-parent {
+    @include flex-column-center-between;
+
+    &__category-title {
+        @include flex-row-center-between;
+        width: 90%;
+        margin-bottom: 0.5rem;
+
+        h2 {
+            color: $color-white;
+        }
+
+        &--more {
+            text-decoration: none;
+            font-weight: bold;
+            color: $color-purple;
+        }
+    }
+
+    &__slider {
+        @include flex-center;
+        position: relative;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 1rem;
+
+        &--left-slide,
+        &--right-slide {
+            position: absolute;
+            cursor: pointer;
+            color: $tertiary-dark;
+            transform: scale(2);
+
+            &:hover {
+                color: $color-white;
+                transform: scale(2.5);
+            }
+        }
+
+        &--left-slide {
+            left: 1%;
+        }
+
+        &--right-slide {
+            right: 1%;
+        }
+
+        &-gameList {
+            @include flex-row-center-evenly;
+            overflow-x: auto;
+            max-width: 90%;
+            min-width: 90%;
+            padding: 0.5rem 0;
+            border-radius: 1rem;
+            box-shadow: inset 3px 3px 4px rgba($color-black, 0.8);
+            -moz-box-shadow: inset 3px 3px 4px rgba($color-black, 0.8);
+            -ms-box-shadow: inset 3px 3px 4px rgba($color-black, 0.8);
+            -o-box-shadow: inset 3px 3px 4px rgba($color-black, 0.8);
+            -webkit-box-shadow: inset 3px 3px 4px rgba($color-black, 0.8);
+
+            &--game {
+                margin: 0 0.5rem;
+                border-radius: 1rem;
+                min-width: 12rem;
+                height: 14rem;
+                background-color: $color-green;
+            }
+        }
+    }
+
+}

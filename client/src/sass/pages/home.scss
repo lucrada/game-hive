@@ -1,0 +1,11 @@
+@import '../theme.scss';
+@import '../util.scss';
+@import '../animation.scss';
+
+.home-page {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: $box-shadow;
+    background-color: $secondary-dark;
+}
