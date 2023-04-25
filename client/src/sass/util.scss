@@ -50,3 +50,11 @@
     justify-content: space-evenly;
     align-items: flex-start;
 }
+
+@mixin inset-box-shadow($x, $y, $blur, $color) {
+    box-shadow: inset $x $y $blur $color;
+    -moz-box-shadow: inset $x $y $blur $color;
+    -ms-box-shadow: inset $x $y $blur $color;
+    -o-box-shadow: inset $x $y $blur $color;
+    -webkit-box-shadow: inset $x $y $blur $color;
+}
