@@ -78,3 +78,20 @@
     -webkit-line-clamp: $lines;
     -webkit-box-orient: vertical;
 }
+
+@mixin custom-scroll-bar ($width, $color, $border-radius, $shadow-color) {
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        @include inset-box-shadow(0, 0, 6px, rgba($color-black, 0.3));
+        border-radius: 1rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: $primary-dark;
+        outline: none;
+    }
+}

@@ -52,6 +52,7 @@
         &-gameList {
             @include flex-row-center-start;
             @include inset-box-shadow(3px, 3px, 4px, rgba($color-black, 0.8));
+            @include custom-scroll-bar (1rem, $primary-dark, 1rem, rgba($color-black, 0.5));
             overflow-x: auto;
             max-width: 90%;
             min-width: 90%;
