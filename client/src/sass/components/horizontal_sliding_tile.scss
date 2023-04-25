@@ -54,7 +54,7 @@
             overflow-x: auto;
             max-width: 90%;
             min-width: 90%;
-            padding: 0.5rem 0;
+            padding: 1.3rem 0;
             border-radius: 1rem;
             box-shadow: inset 3px 3px 4px rgba($color-black, 0.8);
             -moz-box-shadow: inset 3px 3px 4px rgba($color-black, 0.8);
@@ -63,11 +63,81 @@
             -webkit-box-shadow: inset 3px 3px 4px rgba($color-black, 0.8);
 
             &--game {
+                position: relative;
                 margin: 0 0.5rem;
                 border-radius: 1rem;
-                min-width: 12rem;
-                height: 14rem;
-                background-color: $color-green;
+                min-width: 14rem;
+                height: 18rem;
+                box-shadow: $box-shadow;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 1px 1px 5px rgba($color-black, 0.3);
+                }
+
+                &:active {
+                    transform: scale(0.995);
+                    box-shadow: $box-shadow;
+                }
+
+                &__card-details {
+                    @include flex-column-center-evenly;
+                    position: absolute;
+                    bottom: 0;
+                    height: 50%;
+                    width: 100%;
+                    border-bottom-left-radius: 1rem;
+                    border-bottom-right-radius: 1rem;
+                    background-color: rgba($primary-dark, 0.8);
+
+                    &--header {
+                        @include flex-row-center-between;
+                        width: 95%;
+
+                        h2 {
+                            color: $color-white;
+                            display: block;
+                        }
+
+                        span {
+                            color: $color-yellow;
+                        }
+                    }
+
+                    &--info {
+                        align-self: flex-start;
+                        color: $color-white;
+                        width: 90%;
+                        margin-left: 0.5rem;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        color: $color-green;
+                    }
+
+                    &--body {
+                        align-self: flex-start;
+                        width: 90%;
+                        margin-left: 0.5rem;
+                        color: $tertiary-dark;
+                        overflow: hidden;
+                        font-size: 0.8rem;
+                        word-break: break-all;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 5;
+                        -webkit-box-orient: vertical;
+                    }
+
+                }
+
+                img {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 1rem;
+                }
+
             }
         }
     }
