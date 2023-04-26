@@ -30,16 +30,28 @@
     justify-content: space-evenly;
 }
 
+@mixin flex-row-center-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 @mixin flex-row-start-evenly {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
 }
 
-@mixin flex-row-center-start {
+@mixin flex-row-start-start {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-start;
+}
+
+@mixin flex-row-start-between {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 @mixin flex-column-center-between {
@@ -63,6 +75,13 @@
     justify-content: space-evenly;
 }
 
+@mixin flex-column-start-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 @mixin inset-box-shadow($x, $y, $blur, $color) {
     box-shadow: inset $x $y $blur $color;
     -moz-box-shadow: inset $x $y $blur $color;
@@ -79,7 +98,7 @@
     -webkit-box-orient: vertical;
 }
 
-@mixin custom-scroll-bar ($width, $color, $border-radius, $shadow-color) {
+@mixin custom-scroll-bar ($width, $color, $border-radius, $shadow-color: rgba($color-black, 0.3)) {
     &::-webkit-scrollbar {
         width: 1rem;
     }

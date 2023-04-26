@@ -1,5 +1,6 @@
 import { VerticalSpacer } from '../../components/Helpers/VerticalSpacer';
 import { HorizontalSlidingTile, Card } from '../../components/common/HorizontalSlidingTile';
+import { SlideShow } from '../../components/common/SlideShow';
 import '../../sass/pages/home.scss';
 
 export default function Home() {
@@ -14,7 +15,9 @@ export default function Home() {
 
     return (
         <section className='home-page'>
-            <VerticalSpacer rem={2} />
+            <VerticalSpacer rem={5} />
+            <SlideShow />
+            <VerticalSpacer rem={5} />
             <HorizontalSlidingTile title='Most Popular' cardDetails={cardDetails} link='/' />
             <VerticalSpacer rem={4} />
             <HorizontalSlidingTile title='Top Rated' cardDetails={cardDetails} link='/' />

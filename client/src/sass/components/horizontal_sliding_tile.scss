@@ -52,7 +52,7 @@
         &-gameList {
             @include flex-row-center-start;
             @include inset-box-shadow(3px, 3px, 4px, rgba($color-black, 0.8));
-            @include custom-scroll-bar (1rem, $primary-dark, 1rem, rgba($color-black, 0.5));
+            @include custom-scroll-bar (1rem, $primary-dark, 1rem);
             overflow-x: auto;
             max-width: 90%;
             min-width: 90%;
@@ -86,9 +86,9 @@
                     bottom: 0;
                     height: 50%;
                     width: 100%;
-                    border-bottom-left-radius: 1rem;
-                    border-bottom-right-radius: 1rem;
+                    border-radius: 1rem;
                     background-color: rgba($primary-dark, 0.8);
+                    backdrop-filter: blur(2px);
 
                     &--header {
                         @include flex-row-center-between;
