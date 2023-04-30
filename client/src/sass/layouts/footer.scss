@@ -52,7 +52,7 @@
         &--right {
             @include flex-column-start-evenly;
             padding-left: 5rem;
-            border-left: 0.5px solid $color-white;
+            border-left: 1px solid $tertiary-dark;
             flex: 1;
 
             p,
