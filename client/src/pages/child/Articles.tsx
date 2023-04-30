@@ -1,9 +1,9 @@
-import '../../sass/pages/home.scss';
+import '../../sass/pages/articles.scss';
 
 export default function Articles() {
     return (
-        <section className='home-page'>
-            <h1>Articles</h1>
+        <section className='article-page'>
+
         </section>
     );
 }

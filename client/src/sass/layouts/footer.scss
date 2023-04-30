@@ -1,0 +1,81 @@
+@import "../theme.scss";
+@import "../util.scss";
+@import "../animation.scss";
+
+.footer {
+    @include flex-column-center-evenly;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: $secondary-dark;
+    margin-top: 1rem;
+    box-shadow: $box-shadow;
+
+    &__top {
+
+        &--copyright {
+            font-size: 1.3rem;
+            color: $tertiary-dark;
+        }
+    }
+
+    &__bottom {
+        @include flex-row-start-evenly;
+        width: 100%;
+        margin-top: 2rem;
+
+        &--left {
+            padding-left: 5rem;
+            flex: 1;
+
+            h2 {
+                color: $tertiary-dark;
+            }
+
+            div {
+                @include flex-column-start-evenly;
+                margin: 1rem 0;
+
+                a {
+                    margin: 0.5rem 0;
+                    text-decoration: none;
+                    color: $color-purple;
+                    font-size: 1.1rem;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        &--right {
+            @include flex-column-start-evenly;
+            padding-left: 5rem;
+            border-left: 0.5px solid $color-white;
+            flex: 1;
+
+            p,
+            a {
+                margin: 0.5rem 0;
+            }
+
+            p {
+                color: $tertiary-dark;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.1rem;
+                color: $color-purple;
+                transition: all 0.5s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
