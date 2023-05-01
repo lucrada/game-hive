@@ -1,7 +1,7 @@
 import '../../sass/layouts/footer.scss';
 import { Link } from 'react-router-dom';
 
-export function Footer() {
+export function Footer(): JSX.Element {
     return (
         <div className='footer'>
             <div className="footer__top">

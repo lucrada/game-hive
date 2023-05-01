@@ -1,7 +1,7 @@
 import { ArticleCard } from '../../components/common/ArticleCard';
 import '../../sass/pages/articles.scss';
 
-export default function Articles() {
+export default function Articles(): JSX.Element {
     return (
         <section className='article-page'>
             <div className="article-page__header">

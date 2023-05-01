@@ -3,7 +3,7 @@ import LiveTvIcon from '@mui/icons-material/LiveTv';
 import { HorizontalSpacer } from '../Helpers/HorizontalSpacer';
 import { VerticalSpacer } from '../Helpers/VerticalSpacer';
 
-export function SlideShow() {
+export function SlideShow(): JSX.Element {
     return (
         <div className='slide-show-container'>
             <h1>Latest Releases</h1>

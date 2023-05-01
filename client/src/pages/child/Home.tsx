@@ -3,7 +3,7 @@ import { HorizontalSlidingTile, Card } from '../../components/common/HorizontalS
 import { SlideShow } from '../../components/common/SlideShow';
 import '../../sass/pages/home.scss';
 
-export default function Home() {
+export default function Home(): JSX.Element {
     const cardDetails: Array<Card> = [
         { title: 'Call of Duty', img: `${process.env.PUBLIC_URL}/assets/test_images/background.jpg`, players: 500, rating: 5, desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque velit optio vel debitis mollitia commodi doloribus architecto dolore culpa consectetur vero corrupti sint, iste corporis sed distinctio modi minima recusandae.' },
         { title: 'War fare', img: `${process.env.PUBLIC_URL}/assets/test_images/background2.jpg`, players: 450, rating: 4.8, desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque velit optio vel debitis mollitia commodi doloribus architecto dolore culpa consectetur vero corrupti sint, iste corporis sed distinctio modi minima recusandae.' },

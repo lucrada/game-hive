@@ -1,6 +1,6 @@
 import '../../sass/components/article_card.scss';
 
-export function ArticleCard() {
+export function ArticleCard(): JSX.Element {
     return (
         <div className="article-card">
             <img className='article-card__thumbnail' src={`${process.env.PUBLIC_URL}/assets/test_images/background.jpg`} alt="thumbnail" />

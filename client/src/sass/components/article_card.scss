@@ -37,7 +37,7 @@
             height: 100%;
             border-radius: 1rem;
             opacity: 0.9 !important;
-            color: white;
+            color: $color-white;
             background: linear-gradient(to top, $color-purple, $color-black);
             animation: slide-up 0.3s;
             transform-origin: 50% 100%;

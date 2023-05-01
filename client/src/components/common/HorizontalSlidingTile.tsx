@@ -12,7 +12,7 @@ export interface Card {
     players: number,
 }
 
-function SlidingCard(props: { details: Card }) {
+function SlidingCard(props: { details: Card }): JSX.Element {
     const { details } = props;
 
     return (
@@ -36,7 +36,7 @@ function SlidingCard(props: { details: Card }) {
     );
 }
 
-export function HorizontalSlidingTile(props: { title: string, cardDetails: Array<Card>, link: string }) {
+export function HorizontalSlidingTile(props: { title: string, cardDetails: Array<Card>, link: string }): JSX.Element {
     const { title, cardDetails, link } = props;
 
     return (

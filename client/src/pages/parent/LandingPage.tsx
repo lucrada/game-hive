@@ -6,7 +6,7 @@ import News from '../child/News';
 import Trailers from '../child/Trailers';
 import { Footer } from '../../components/layouts/Footer';
 
-export default function LandingPage() {
+export default function LandingPage(): JSX.Element {
     return (
         <div>
             <Navbar />

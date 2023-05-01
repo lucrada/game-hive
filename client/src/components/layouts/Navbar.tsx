@@ -3,7 +3,7 @@ import '../../sass/layouts/navbar.scss';
 import SearchIcon from '@mui/icons-material/Search';
 import { Link, NavLink } from 'react-router-dom';
 
-function Navbar() {
+function Navbar(): JSX.Element {
     return (
         <nav className='nav-bar'>
             <div className='nav-bar__left'>
