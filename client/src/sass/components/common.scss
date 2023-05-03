@@ -1,0 +1,39 @@
+@import '../theme.scss';
+@import '../util.scss';
+@import '../animation.scss';
+
+.input-text-box-1 {
+    outline: none;
+    width: 90%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+    border: 1px solid $color-grey;
+    color: $color-purple;
+
+    &:active,
+    &:focus {
+        border: 1px solid $color-purple;
+    }
+}
+
+.input-btn-1 {
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem 2rem;
+    margin: 1rem 0;
+    background-color: $color-purple;
+    color: $color-white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 2px 2px 4px rgba($color-black, 0.5);
+    }
+
+    &:active {
+        @include inset-box-shadow(2px, 2px, 4px, rgba($color-black, 0.5));
+    }
+}

@@ -1,0 +1,55 @@
+@import '../theme.scss';
+@import '../util.scss';
+@import '../animation.scss';
+@import '../components/common.scss';
+
+.auth-modal-bg {
+    @include fixed-full-screen;
+    @include flex-center;
+    display: none;
+    background-color: rgba($primary-dark, 0.9);
+
+    &__modal {
+        @include flex-column-start-evenly;
+        width: 30%;
+        padding: 2rem;
+        margin-bottom: 15rem;
+        border-radius: 1rem;
+        box-shadow: $box-shadow;
+        background-color: $color-white;
+
+        h2 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+            padding-bottom: 0.3rem;
+            width: 100%;
+            border-bottom: 1px solid $color-grey;
+            color: $color-purple;
+        }
+
+        form {
+            @include flex-column-center-evenly;
+            width: 100%;
+
+            a {
+                text-decoration: none;
+                color: $color-purple;
+                transition: all 0.3s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            div {
+                @include flex-row-center-between;
+                width: 95%;
+                margin: 0.5rem 0;
+
+                label>span {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
