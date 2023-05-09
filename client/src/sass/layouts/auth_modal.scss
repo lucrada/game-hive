@@ -6,7 +6,6 @@
 .auth-modal-bg {
     @include fixed-full-screen;
     @include flex-center;
-    display: none;
     background-color: rgba($primary-dark, 0.9);
 
     &__modal {

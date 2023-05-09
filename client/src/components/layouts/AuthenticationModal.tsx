@@ -3,7 +3,7 @@ import '../../sass/layouts/auth_modal.scss';
 
 export function AuthenticationModal(): JSX.Element {
     return (
-        <div className='auth-modal-bg'>
+        <div id='auth-modal' className='auth-modal-bg hidden'>
             <div className="auth-modal-bg__modal">
                 <h2>Login</h2>
                 <form action='#'>

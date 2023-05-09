@@ -4,6 +4,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Link, NavLink } from 'react-router-dom';
 
 function Navbar(): JSX.Element {
+    const openLoginModal = function () {
+        const modal = document.getElementById('auth-modal');
+        modal?.classList.remove('hidden');
+    }
+
     return (
         <nav className='nav-bar'>
             <div className='nav-bar__left'>
@@ -20,7 +25,7 @@ function Navbar(): JSX.Element {
                     <input type='text' placeholder='Search' autoComplete='off' />
                     <SearchIcon className='search-btn' />
                 </div>
-                <a className='nav-bar-link' href="#">Log In</a>
+                <a className='nav-bar-link' href="#" onClick={openLoginModal}>Log In</a>
                 <a className='nav-bar-link' href="#">Sign Up</a>
             </div>
         </nav>
