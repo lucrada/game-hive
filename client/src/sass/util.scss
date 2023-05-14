@@ -48,6 +48,12 @@
     justify-content: flex-start;
 }
 
+@mixin flex-row-center-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 @mixin flex-row-start-evenly {
     display: flex;
     align-items: flex-start;

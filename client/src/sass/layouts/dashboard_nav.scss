@@ -1,0 +1,64 @@
+@import '../theme.scss';
+@import '../util.scss';
+@import '../animation.scss';
+
+.nav-bar {
+    @include flex-row-center-between;
+    box-shadow: $box-shadow;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: $secondary-dark;
+
+    &__logo {
+        flex: 1;
+
+        img {
+            width: 3rem;
+        }
+    }
+
+    &__search[type='text'] {
+        outline: none;
+        flex: 3;
+        border-radius: 0.3rem;
+        padding: 0.7rem 0.5rem;
+        border: 1px solid $primary-dark;
+        color: $color-purple;
+        background-color: $primary-dark;
+
+        &::placeholder {
+            color: $color-purple;
+        }
+    }
+
+    &__drop-down {
+        @include flex-row-center-end;
+        flex: 1;
+
+        &--user {
+            @include flex-center;
+            position: relative;
+            font-size: 1.5rem;
+            border-radius: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: $primary-dark;
+            cursor: pointer;
+
+            span {
+                color: $color-white;
+            }
+
+            &__menu {
+                display: none;
+                position: absolute;
+                background-color: yellow;
+                width: 10rem;
+                height: 12rem;
+                opacity: 0.2;
+                right: 50%;
+                top: 100%;
+            }
+        }
+    }
+}
