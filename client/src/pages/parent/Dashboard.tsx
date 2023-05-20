@@ -1,21 +1,24 @@
-import { Link } from "react-router-dom";
-import '../../sass/layouts/dashboard_nav.scss';
+import { PostForm } from '../../components/forms/PostForm';
+import { DashboardNavBar } from '../../components/layouts/DashboardNavBar';
+import '../../components/layouts/DashboardNavBar';
+import '../../sass/pages/dashboard.scss';
 
 export function Dashboard(): JSX.Element {
     return (
-        <section>
-            <div className='nav-bar'>
-                <Link className='nav-bar__logo' to='#'>
-                    <img src={`${process.env.PUBLIC_URL}/assets/images/logo.png`} alt='logo' />
-                </Link>
-                <input type='text' name='search' className='nav-bar__search' placeholder='Search' />
-                <div className='nav-bar__drop-down'>
-                    <div className='nav-bar__drop-down--user'>
-                        <span>S</span>
-                        <div className='nav-bar__drop-down--user__menu'></div>
-                    </div>
+        <div className='dashboard'>
+            <header className='dashboard__header'>
+                <DashboardNavBar />
+            </header>
+            <main className='dashboard__body'>
+                <div className='dashboard__body--left_pane'></div>
+                <div className='dashboard__body--center_pane'>
+                    <PostForm />
                 </div>
-            </div>
-        </section>
+                <div className='dashboard__body--right_pane'></div>
+            </main>
+            <footer className='dashboard__footer'>
+
+            </footer>
+        </div>
     );
 }

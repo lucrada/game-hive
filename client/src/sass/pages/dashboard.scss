@@ -1,0 +1,24 @@
+@import '../theme.scss';
+@import '../util.scss';
+@import '../animation.scss';
+
+.dashboard__body {
+    @include flex-row-start-evenly;
+    margin: 2rem 0;
+
+    &--left_pane,
+    &--right_pane {
+        flex: 1;
+        height: 30rem;
+        border-radius: 1rem;
+        background-color: $secondary-dark;
+        box-shadow: $box-shadow;
+    }
+
+    &--center_pane {
+        @include flex-column-center-evenly;
+
+        flex: 3;
+        margin: 0 3rem;
+    }
+}
