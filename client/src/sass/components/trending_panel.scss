@@ -1,0 +1,52 @@
+@import '../theme.scss';
+@import '../util.scss';
+@import '../animation.scss';
+
+.trending-panel {
+    @include flex-column-start-between;
+    padding: 1rem;
+
+    h2 {
+        align-self: stretch;
+        color: $color-green;
+        font-weight: lighter;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid $primary-dark;
+    }
+
+    &-item {
+        @include flex-row-start-between;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+            transform: translateX(5px);
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+
+        &--icon {
+            margin-right: 1rem;
+            color: $color-purple;
+        }
+
+        &--content {
+            h3 {
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                color: $color-purple;
+            }
+
+            p {
+                @include limit-lines(3);
+                font-size: 0.9rem;
+                font-weight: lighter;
+                color: #eee;
+            }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+import { TrendingPanel } from '../../components/common/TrendingPanel';
 import { PostForm } from '../../components/forms/PostForm';
 import { DashboardNavBar } from '../../components/layouts/DashboardNavBar';
 import '../../components/layouts/DashboardNavBar';
@@ -10,7 +11,9 @@ export function Dashboard(): JSX.Element {
                 <DashboardNavBar />
             </header>
             <main className='dashboard__body'>
-                <div className='dashboard__body--left_pane'></div>
+                <div className='dashboard__body--left_pane'>
+                    <TrendingPanel />
+                </div>
                 <div className='dashboard__body--center_pane'>
                     <PostForm />
                 </div>

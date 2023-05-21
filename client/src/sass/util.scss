@@ -93,6 +93,13 @@
     justify-content: space-evenly;
 }
 
+@mixin flex-column-start-between {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
 @mixin flex-column-start-center {
     display: flex;
     flex-direction: column;
